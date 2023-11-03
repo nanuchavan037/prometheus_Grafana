@@ -2,8 +2,8 @@ global:
   scrape_interval: 5s
 
 scrape_configs:
-  - job_name: 'prometheus'
+  - job_name: 'prometheus-jenkins'
     static_configs:
-      - targets: ['localhost:9090']
+      - targets: ['localhost:8080']
     metrics_path: /metrics
 
